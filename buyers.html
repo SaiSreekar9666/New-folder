@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Dashboard</title>
+    <link rel="stylesheet" href="css-login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Buyer Dashboard</h2>
+        <h3>Filter Properties</h3>
+        <form id="filter-form">
+            <div class="input-group">
+                <label for="filter-place">Place</label>
+                <input type="text" id="filter-place" name="filter-place">
+            </div>
+            <div class="input-group">
+                <label for="filter-area">Min Area (sq ft)</label>
+                <input type="number" id="filter-area" name="filter-area">
+            </div>
+            <div class="input-group">
+                <label for="filter-bedrooms">Min Number of Bedrooms</label>
+                <input type="number" id="filter-bedrooms" name="filter-bedrooms">
+            </div>
+            <div class="input-group">
+                <label for="filter-bathrooms">Min Number of Bathrooms</label>
+                <input type="number" id="filter-bathrooms" name="filter-bathrooms">
+            </div>
+            <button type="submit">Apply Filters</button>
+        </form>
+
+        <h3>Available Properties</h3>
+        <div id="available-properties">
+            <!-- Available properties will be listed here -->
+        </div>
+    </div>
+</body>
+</html>
